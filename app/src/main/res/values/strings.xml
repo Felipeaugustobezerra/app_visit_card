@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BussinessCard</string>
+    <string name="label_bussiness_card">Cartao de Visita</string>
+    <string name="New_card">Novo Cartao</string>
+    <string name="label_show_sucess">Cartao Cadastrado com Sucesso</string>
+    <string name="label_share">Compartilhar</string>
+</resources>

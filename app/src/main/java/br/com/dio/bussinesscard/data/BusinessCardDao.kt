@@ -1,0 +1,18 @@
+package br.com.dio.bussinesscard.data
+
+import androidx.lifecycle.LiveData
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.OnConflictStrategy
+import androidx.room.Query
+import br.com.dio.bussinescard.data.BusinessCard
+
+@Dao
+interface BusinessCardDao {
+
+    @Query("SELECT * FROM BusinessCard")
+    fun getAll() : LiveData<List<BusinessCard>>
+
+    @Insert(onConflict = OnConflictStrategy.IGNORE)
+    suspend fun insert(businessCard: BusinessCard)
+}
